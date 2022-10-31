@@ -6,6 +6,7 @@ window.addEventListener("load", function() {
 window.addEventListener("load", function () {
     const form = document.getElementById("submitVisit");
     form.addEventListener("submit", getInfo);
+
   });
   
 //------------------------------------------------------------------------------
@@ -55,6 +56,7 @@ function getInfo(event){
     const yearInput = document.getElementById("yearInput").value;
 
     let newLocation = new Visit(locationInput, landmarkInput, yearInput);
+    console.log("hello")
     return addressBook.addContact(newLocation);
 
 }
