@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Places</title>
+</head>
+
+<body>
+    <h1>Enter a memory: </h1>
+    <form id="submitVisit">
+        <label>Enter a location:
+            <input type="text" id="locationInput">
+        </label><br><br>
+        <label>Enter a landmark:
+            <input type="text" id="landmarkInput">
+        </label><br><br>
+        <label>Enter a year:
+            <input type="text" id="yearInput">
+        </label><br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    
+    <h1>Rediscover a destination</h1>
+    <form id="locationCatalog">
+        <label>
+            <input type="checkbox" name="singaporeBox" id="singaporeBox">
+        </label><br>
+        <label>
+            <input type="checkbox" name="drBox" id="drBox">
+        </label><br>
+    </form>
+    <div id="drInfo" class="hidden">
+        <h1>Dominican Republic</h1>
+        <p id="drLocation"></p>
+        <p id="drLandmark"></p>
+        <p id="drYear"></p>
+        <p id="drNotes"></p>
+    </div>
+    <div id="singaporeInfo" class="hidden">
+        <h1>Singapore</h1>
+        <p id="sLocation"></p>
+        <p id="sLandmark"></p>
+        <p id="sYear"></p>
+        <p id="sNotes"></p>
+
+    </div>
+
+
+</body>
+
+</html>
